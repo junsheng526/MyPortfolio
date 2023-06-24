@@ -1,0 +1,170 @@
+.child {
+    /* scroll-snap-align: start; */
+    /* height: 100vh; */
+}
+
+/* .container-parent {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    width: 100%;
+} */
+
+/* .child::-webkit-scrollbar {
+    display: none;
+} */
+
+/* ::-webkit-scrollbar {
+    display: none;
+} */
+
+.first-section {
+    height: 100vh;
+}
+
+.second-section {
+    height: 100vh;
+}
+
+/* swiper css */
+.swiper-custom {
+    /* margin-top: 5%; */
+    position: relative;
+}
+
+.swiper {
+    width: 80%;
+    height: 80%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 80%;
+    height: 80%;
+    /* object-fit: cover; */
+}
+
+.swiper-button-prev {
+    left: calc(50% - 40px);
+}
+
+.swiper-button-next {
+    right: calc(50% - 40px);
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(20%);
+    }
+}
+
+.third-section {
+    padding-top: 8%;
+    height: 100vh;
+}
+
+.third-section img {
+    height: 150px;
+    width: 150px;
+}
+
+/* project images display */
+.row1-col1 {
+    background-repeat: none;
+    background-size: cover;
+}
+
+/* .row1-col2 {
+    background-repeat: none;
+    background-size: cover;
+}
+
+.row2-col1 {
+    background-repeat: none;
+    background-size: cover;
+}
+
+.row2-col2 {
+    background-repeat: none;
+    background-size: cover;
+} */
+
+/* hover effect for the project images */
+.hovtxt {
+    background: #000000;
+    opacity: 0;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    height: 250px;
+    min-height: 250px;
+    max-height: 100%;
+    text-align: justify;
+}
+
+.hovtxt:hover {
+    opacity: 0.8;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.try:hover .overlay {
+    opacity: 0.8;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.try {
+    position: relative;
+    width: 50%;
+}
