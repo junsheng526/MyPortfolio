@@ -35,11 +35,11 @@
       <div class="container-fluid justify-content-lg-center justify-content-md-center justify-content-sm-evenly">
         <!-- logo with home.html start -->
         <a href="#">
-          <img src="/images/moon.png" href="#first-section" alt="logo" style="height: 100px; width: 100px"/>
+          <img id="logoImage" src="/images/moon.png" href="#first-section" alt="logo" style="height: 100px; width: 100px"/>
         </a>
 
         <!-- If want use name uncomment code  -->
-        <a class="navbar-brand text-primary fw-bold" href="#first-section">Your Name</a>
+        <a id="logoName" class="navbar-brand text-primary fw-bold" href="#first-section"></a>
         <!-- logo with home.html end -->
 
         <!-- toggle button  -->
@@ -90,16 +90,13 @@
         <div class="col-10 col-md-5 col-lg-5 text-center text-md-start">
           <h1>
             <div class="display-4 text-secondary">Hello, I'm</div>
-            <div class="display-4 text-primary">Your Name</div>
+            <div id="firstSectionName" class="display-4 text-primary"></div>
           </h1>
           <p>
-            <div class="text-secondary"><i>"Transforming Ideas into Captivating Visual Experiences"</i></div>
+            <div id="slogan" class="text-secondary"></div>
           </p>
-          <p class="my-4 text-secondary" style="text-align: justify;">
-            With a strong foundation in both traditional and digital design, 
-            I bring a fresh and innovative approach to every project I undertake. 
-            My goal is to create designs that not only communicate 
-            a message effectively but also evoke emotions and leave a lasting impression.
+          <p id="firstDesc" class="my-4 text-secondary" style="text-align: justify;">
+            
           </p>
           <a href="#" class="btn-outline-color btn btn-outline-primary btn-white btn-lg">View Portfolio</a>
           <a href="#" class="btn btn-primary btn-lg text-white">Contact Me<span class="ms-2"><i class="fa-solid fa-chevron-right"></i></span></a>
@@ -126,15 +123,8 @@
           <!-- <div class="display-4 text-secondary">Hello, I'm</div> -->
           <div class="display-4 text-primary">About Me</div>
         </h1>
-        <p class="my-4 text-secondary" style="text-align: justify;">
-            Hello there! I'm Emily Johnson, a passionate graphic designer with over 8 years of experience in the industry. 
-            Design has always been my true calling, and I find joy in creating visually stunning and impactful designs 
-            that leave a lasting impression.
-            <br><br>
-            I earned my Bachelor's degree in Graphic Design from XYZ University, where I honed my skills in various 
-            design disciplines. Throughout my career, I have developed expertise in branding, logo design, and print 
-            collateral. I am also well-versed in digital design, including UI/UX design and illustration. My design 
-            approach is rooted in simplicity, effective communication, and a keen eye for detail.
+        <p id="aboutDesc" class="my-4 text-secondary" style="text-align: justify;">
+
         </p>
       </div>
     </div>
@@ -290,6 +280,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="/js/index.js"></script>  
+  <script src="/js/constant.js"></script> 
 
 </body>
 </html>
